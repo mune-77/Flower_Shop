@@ -1,0 +1,5 @@
+.nav-link.active {
+    color: #f45d96 !important;
+    font-weight: 600;
+    transition: 0.1s all ease;
+}

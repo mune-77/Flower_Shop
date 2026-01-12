@@ -1,0 +1,21 @@
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+function App() {
+
+
+  return (
+    <>
+   <Router>
+    <Navbar />
+    <Routes>
+       <Route path="/" element={<Hero />} />
+    </Routes>
+   </Router>
+    </>
+  )
+}
+
+export default App
