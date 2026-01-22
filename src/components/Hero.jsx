@@ -2,20 +2,21 @@ import { Carousel, Row, Col, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const sliders = [
-  {
+    {
     id: 1,
     image:
-      "https://t4.ftcdn.net/jpg/14/61/14/05/360_F_1461140561_t4bmx2hcgTJwrKY3lIWY1JMT7CiggJ43.jpg",
+      "https://images.unsplash.com/photo-1580915606060-ade70aceab53?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "FRESH FLOWER & GIFT SHOP",
     description: "Making beautiful flowers a part of your life.",
   },
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1580915606060-ade70aceab53?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://t4.ftcdn.net/jpg/14/61/14/05/360_F_1461140561_t4bmx2hcgTJwrKY3lIWY1JMT7CiggJ43.jpg",
     title: "FRESH FLOWER & GIFT SHOP",
     description: "Making beautiful flowers a part of your life.",
   },
+
 ];
 function Hero() {
   return (

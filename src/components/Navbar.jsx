@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import {
   Navbar as BootstrapNavbar,
   Nav,
@@ -8,7 +10,9 @@ import {
   Button,
 } from "react-bootstrap";
 import { FaSearch, FaRegHeart, FaShoppingBag } from "react-icons/fa";
+
 const Navbar = () => {
+  const { totalItems } = useContext(CartContext);
   return (
     <BootstrapNavbar expand="lg" className="fixed-top shadow-sm bg-light py-3">
       <Container>
@@ -118,6 +122,11 @@ const Navbar = () => {
               </Nav.Link>
               <Nav.Link className="text-dark fs-4 ps-5">
                 <FaShoppingBag />
+                {totalItems > 0 && (
+                  <Badge pill bg="danger" className="posaition-absolute top-0 start-100 translate-middle badge rounded-pill"
+                  style={{fontSize: '0.8rem'}}
+                  >{totalItems}</Badge>
+                )}
               </Nav.Link>
             </div>
           </Nav>

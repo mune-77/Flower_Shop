@@ -32,3 +32,11 @@
 .active-btn{
     border: #f45d96 2px solid !important;
 }
+.shado{
+    text-shadow: #f45d96 2px 2px 4px ;
+}
+.required::after{
+    content: '*';
+    color: #f45d96;
+    font-weight: bold;
+}
